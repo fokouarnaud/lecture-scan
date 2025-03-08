@@ -17,7 +17,7 @@ class UserLibraryController extends Controller
     {
         $this->mangaService = $mangaService;
         // Require authentication for all methods
-        $this->middleware('auth');
+        //$this->middleware('auth');
     }
 
     /**

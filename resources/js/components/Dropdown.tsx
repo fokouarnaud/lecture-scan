@@ -80,7 +80,7 @@ const Content = ({ align = 'right', width = '48', contentClasses = 'py-1 bg-whit
   );
 };
 
-const DropdownLink = ({ href, method = 'post', as = 'a', children }: { href: string, method?: 'get' | 'post' | 'put' | 'patch' | 'delete', as?: string, children: React.ReactNode }) => {
+const DropdownLink = ({ href, method = 'get', as = 'a', children }: { href: string, method?: 'get' | 'post' | 'put' | 'patch' | 'delete', as?: string, children: React.ReactNode }) => {
   return (
     <Link
       href={href}

@@ -9,6 +9,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class ReadingProgress extends Model
 {
     use HasFactory;
+    // Spécifier explicitement le nom de la table
+    protected $table = 'reading_progresses';
 
     protected $fillable = [
         'user_id',

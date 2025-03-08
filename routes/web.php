@@ -46,6 +46,11 @@ Route::middleware('auth')->group(function () {
     
     // Reading history
     Route::get('/history', [UserLibraryController::class, 'history'])->name('history.index');
+
+    //dashboard
+    Route::get('/dashboard', function () {
+        return redirect()->route('library.index');
+    })->name('dashboard');
 });
 
 require __DIR__.'/auth.php';
